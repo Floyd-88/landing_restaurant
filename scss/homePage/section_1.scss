@@ -1,6 +1,8 @@
 .section-1 {
     &__cards {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 31px;
         margin-top: -103px;
     }
@@ -8,7 +10,7 @@
     &__card {
         display: flex;
         flex-direction: column;
-        width: 349px;
+        width: 309px;
         height: 260px;
         align-items: center;
         box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
@@ -53,6 +55,7 @@
             flex-direction: column;
             font-weight: 400;
             width: 442px;
+            padding-bottom: 182px;
 
             &__title {
                 font-family: $second-family;
@@ -101,9 +104,13 @@
         }
 
         &__imgs {
-            position: relative;
             height: auto;
             flex: 1;
+
+            &__list {
+                position: relative;
+
+            }
 
             &__img-1 {
                 position: absolute;
@@ -114,10 +121,10 @@
             }
 
             &__img-2 {
-    position: absolute;
-    z-index: 10;
-    top: -15px;
-    left: 191px;
+                position: absolute;
+                z-index: 10;
+                top: -15px;
+                left: 191px;
             }
 
             &__img-3 {
@@ -138,4 +145,105 @@
         }
     }
 
+}
+
+@media (max-width: 1110px) {
+    .section-1 {
+
+        &__card__title {
+            font-size: 25px;
+        }
+
+        &__card__desc {
+            font-size: 22px;
+        }
+
+        &__history {
+            margin-top: 75px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+
+            &__imgs__list {
+                position: relative;
+                width: 137px;
+                border: 1px solid;
+                height: 221px;
+                // top: -60px;
+            }
+
+            &__imgs {
+                &__img-1 {
+                    width: 136px;
+                    height: 154px;
+                    position: absolute;
+                    z-index: 100;
+                    top: 78px;
+                    left: 70px;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                }
+
+                &__img-2 {
+                    width: 137px;
+                    height: 221px;
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    left: 0;
+                }
+
+                &__img-3 {
+                    width: 125px;
+                    height: 154px;
+                    position: absolute;
+                    z-index: 100;
+                    top: 33px;
+                    left: -64px;
+                }
+
+                &__img-4 {
+                    width: 114px;
+                    height: 84px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 20px;
+                    left: 55px;
+                }
+            }
+
+            &__text {
+                padding-bottom: 0;
+            }
+
+            &__text__desc {
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .section-1 {
+        &__history {
+            &__text__count {
+                display: flex;
+                flex-direction: column;
+                margin-top: 83px;
+                justify-content: center;
+                gap: 22px;
+
+                &__block {
+                    flex-direction: column;
+                }
+            }
+
+            &__text {
+                padding-bottom: 0;
+                width: 290px;
+            }
+
+
+        }
+    }
 }
