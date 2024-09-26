@@ -111,7 +111,7 @@
     }
 
     &__btn {
-        @include btn(transparent, $orange, 0, $white, 14px, 700, 14px, 18px, );
+        @include btn(transparent, $orange, 0, $white, 14px, 700, 14px, 18px );
         transition: background-color .2s linear;
 
         &:hover {

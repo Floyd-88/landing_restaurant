@@ -1,0 +1,92 @@
+.section-2 {
+    background: url("../../assets/img/section-2/bg.png");
+
+    &__block {
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 104px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__offer {
+        &__title {
+            font-family: $second-family;
+            font-weight: 400;
+            font-size: 52px;
+            color: $dark-orange;
+        }
+
+        &__text {
+            margin-top: 22px;
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 24px;
+            color: $white;
+        }
+
+        &__btn {
+            @include btn(transparent, $orange, 0, $white, 14px, 700, 14px, 18px);
+            transition: background-color .2s linear;
+            margin-top: 26px;
+            margin-right: 25px;
+
+            &:hover {
+                background: $hover-orange;
+            }
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .section-2 {
+        margin-top: 50px;
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__offer {
+            text-align: center;
+            &__title {
+
+                font-size: 42px;
+            }
+
+            &__text {
+                margin-top: 22px;
+                font-size: 24px;
+            }
+
+            &__btn {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+  
+
+@media (max-width: 540px) {
+    .section-2 {
+
+        &__block {
+            padding-top: 20px;
+            padding-bottom: 30px;
+
+        }
+
+        &__offer {
+            &__title {
+
+                font-size: 30px;
+            }
+
+            &__text {
+                margin-top: 22px;
+
+                font-size: 24px;
+            }
+        }
+    }
+
+}
