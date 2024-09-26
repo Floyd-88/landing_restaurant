@@ -11,12 +11,13 @@
     height: auto;
 }
 
-@mixin btn($bd-color, $bg-color, $bdrs, $color, $font-size, $p-top, $p-left) {
+@mixin btn($bd-color, $bg-color, $bdrs, $color, $font-size, $font-w, $p-top, $p-left) {
 border: 1px solid $bd-color;
 background: $bg-color;
 border-radius: $bdrs;
 color: $color;
 font-size: $font-size;
+font-weight: $font-w;
 padding: $p-top $p-left;
 cursor: pointer;
 }

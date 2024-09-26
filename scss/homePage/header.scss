@@ -30,13 +30,13 @@
         font-family: $font-family;
         font-weight: 700;
         font-size: 14px;
-        color: #fff;
+        color: $white;
         text-transform: uppercase;
         cursor: pointer;
         transition: color .2s linear;
 
         &:hover {
-            color: #ff7400;
+            color: $orange;
         }
     }
 
@@ -60,7 +60,7 @@
             display: block;
             width: 1px;
             height: 51px;
-            background-color: #fff;
+            background-color: $white;
             position: absolute;
             top: -22px;
             left: 33px;
@@ -88,13 +88,13 @@
                 font-family: $font-family;
                 font-weight: 700;
                 font-size: 18px;
-                color: #fff;
+                color: $white;
                 text-decoration: none;
                 cursor: pointer;
                 transition: color .2s linear;
 
                 &:hover {
-                    color: #ff7400;
+                    color: $orange;
                 }
             }
         }
@@ -104,23 +104,89 @@
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 14px;
-                color: #fff;
+                color: $white;
             }
         }
 
     }
 
     &__btn {
-        @include btn(transparent, #ff7400, 0, #fff, 14px, 14px, 18px, );
+        @include btn(transparent, $orange, 0, $white, 14px, 700, 14px, 18px, );
         transition: background-color .2s linear;
 
         &:hover {
-            background: #a94e04;
+            background: $hover-orange;
         }
     }
 
     &__burger {
         display: none;
+    }
+
+    &__main {
+        margin-top: 203px;
+        padding-left: 8px;
+
+        &__col {
+            display: inline-block;
+            text-align: center;
+        }
+
+        &__text {
+            font-family: $second-family;
+            font-weight: 400;
+
+            &__title {
+                font-size: 50px;
+                color: $dark-orange;
+            }
+
+            &__subtitle {
+                font-size: 80px;
+                color: #d67e35;
+
+            }
+
+            &__name {
+                position: relative;
+                font-family: $font-family;
+                font-size: 18px;
+                color: $white;
+                margin-top: 4px;
+                padding-left: 17px;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 61px;
+                    height: 2px;
+                    background-color: #c4c4c4;
+                    top: 11px;
+                    left: 97px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 61px;
+                    height: 2px;
+                    background-color: #c4c4c4;
+                    top: 11px;
+                    right: 77px;
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 22px;
+            margin-left: 20px;
+            @include btn(transparent, $orange, 0, $white, 14px, 700, 14px, 28px, );
+            transition: background-color .2s linear;
+
+            &:hover {
+                background-color: $hover-orange;
+            }
+        }
     }
 }
 
@@ -132,6 +198,38 @@
 
         &__burger {
             display: block;
+        }
+
+        &__main {
+            text-align: center;
+
+            &__text {
+                &__title {
+                    font-size: 40px;
+                }
+
+                &__subtitle {
+                    font-size: 60px;
+                }
+
+                &__name {
+                    font-size: 18px;
+
+                    &::after {
+                        width: 55px;
+                        height: 1px;
+                        top: 11px;
+                        left: 42px;
+                    }
+
+                    &::before {
+                        width: 55px;
+                        height: 1px;
+                        top: 11px;
+                        right: 25px;
+                    }
+                }
+            }
         }
     }
 
@@ -147,6 +245,32 @@
             img {
                 width: 45px;
                 height: 31px;
+            }
+        }
+
+        &__main {
+            text-align: center;
+
+            &__text {
+                &__title {
+                    font-size: 30px;
+                }
+
+                &__subtitle {
+                    font-size: 40px;
+                }
+
+                &__name {
+                    font-size: 15px;
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
             }
         }
     }

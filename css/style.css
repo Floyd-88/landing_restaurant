@@ -184,6 +184,7 @@ img {
   border-radius: 0;
   color: #fff;
   font-size: 14px;
+  font-weight: 700;
   padding: 14px 18px;
   cursor: pointer;
   transition: background-color 0.2s linear;
@@ -194,6 +195,68 @@ img {
 .header__burger {
   display: none;
 }
+.header__main {
+  margin-top: 203px;
+  padding-left: 8px;
+}
+.header__main__col {
+  display: inline-block;
+  text-align: center;
+}
+.header__main__text {
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+}
+.header__main__text__title {
+  font-size: 50px;
+  color: #d67e35;
+}
+.header__main__text__subtitle {
+  font-size: 80px;
+  color: #d67e35;
+}
+.header__main__text__name {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 4px;
+  padding-left: 17px;
+}
+.header__main__text__name::after {
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #c4c4c4;
+  top: 11px;
+  left: 97px;
+}
+.header__main__text__name::before {
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #c4c4c4;
+  top: 11px;
+  right: 77px;
+}
+.header__main__btn {
+  margin-top: 22px;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  background: #ff7400;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.header__main__btn:hover {
+  background-color: #a94e04;
+}
 
 @media (max-width: 900px) {
   .header__nav {
@@ -201,6 +264,30 @@ img {
   }
   .header__burger {
     display: block;
+  }
+  .header__main {
+    text-align: center;
+  }
+  .header__main__text__title {
+    font-size: 40px;
+  }
+  .header__main__text__subtitle {
+    font-size: 60px;
+  }
+  .header__main__text__name {
+    font-size: 18px;
+  }
+  .header__main__text__name::after {
+    width: 55px;
+    height: 1px;
+    top: 11px;
+    left: 42px;
+  }
+  .header__main__text__name::before {
+    width: 55px;
+    height: 1px;
+    top: 11px;
+    right: 25px;
   }
 }
 @media (max-width: 540px) {
@@ -212,6 +299,24 @@ img {
   .header__logo img {
     width: 45px;
     height: 31px;
+  }
+  .header__main {
+    text-align: center;
+  }
+  .header__main__text__title {
+    font-size: 30px;
+  }
+  .header__main__text__subtitle {
+    font-size: 40px;
+  }
+  .header__main__text__name {
+    font-size: 15px;
+  }
+  .header__main__text__name::after {
+    display: none;
+  }
+  .header__main__text__name::before {
+    display: none;
   }
 }
 
