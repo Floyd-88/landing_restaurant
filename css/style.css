@@ -209,7 +209,7 @@ img {
 }
 .header__main__text__title {
   font-size: 50px;
-  color: #d67e35;
+  color: #d67e34;
 }
 .header__main__text__subtitle {
   font-size: 80px;
@@ -318,6 +318,118 @@ img {
   .header__main__text__name::before {
     display: none;
   }
+}
+.section-1__cards {
+  display: flex;
+  gap: 31px;
+  margin-top: -103px;
+}
+.section-1__card {
+  display: flex;
+  flex-direction: column;
+  width: 349px;
+  height: 260px;
+  align-items: center;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  padding-top: 48px;
+  padding: 48px 20px 20px 20px;
+}
+.section-1__card img {
+  width: 87px;
+  height: 87px;
+}
+.section-1__card__title {
+  padding-top: 4px;
+  color: #2c2c2c;
+}
+.section-1__card__title span {
+  color: #bc9060;
+}
+.section-1__card__desc {
+  padding-top: 20px;
+  text-align: center;
+  color: #656363;
+}
+.section-1__history {
+  margin-top: 166px;
+  display: flex;
+  gap: 125px;
+}
+.section-1__history__text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  width: 442px;
+}
+.section-1__history__text__title {
+  font-family: "Tinos", sans-serif;
+  text-align: center;
+  font-size: 54px;
+  color: #000;
+}
+.section-1__history__text__title span {
+  color: #d67e34;
+}
+.section-1__history__text__desc {
+  margin-top: 21px;
+  font-size: 16px;
+  text-align: center;
+  color: #656363;
+  font-family: "Open Sans", sans-serif;
+}
+.section-1__history__text__count {
+  display: flex;
+  margin-top: 83px;
+  justify-content: center;
+  gap: 41px;
+  font-family: "Open Sans", sans-serif;
+}
+.section-1__history__text__count__block {
+  flex-direction: column;
+}
+.section-1__history__text__count__block__num {
+  font-size: 40px;
+  text-align: center;
+  color: #bc9060;
+}
+.section-1__history__text__count__block__name {
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+.section-1__history__imgs {
+  position: relative;
+  height: auto;
+  flex: 1;
+}
+.section-1__history__imgs__img-1 {
+  position: absolute;
+  z-index: 100;
+  top: 182px;
+  left: 287px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.section-1__history__imgs__img-2 {
+  position: absolute;
+  z-index: 10;
+  top: -15px;
+  left: 191px;
+}
+.section-1__history__imgs__img-3 {
+  position: absolute;
+  z-index: 100;
+  top: 16px;
+  left: -10px;
+}
+.section-1__history__imgs__img-4 {
+  position: absolute;
+  z-index: 1;
+  top: 17px;
+  left: 287px;
 }
 
 /*# sourceMappingURL=style.css.map */

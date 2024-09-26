@@ -1,0 +1,141 @@
+.section-1 {
+    &__cards {
+        display: flex;
+        gap: 31px;
+        margin-top: -103px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 349px;
+        height: 260px;
+        align-items: center;
+        box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        font-family: "Tinos", sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        padding-top: 48px;
+        padding: 48px 20px 20px 20px;
+
+
+        img {
+            width: 87px;
+            height: 87px;
+        }
+
+        &__title {
+            padding-top: 4px;
+            color: #2c2c2c;
+
+            span {
+                color: #bc9060;
+            }
+        }
+
+        &__desc {
+            padding-top: 20px;
+            text-align: center;
+            color: #656363;
+        }
+    }
+
+    // -------------------------------------
+
+    &__history {
+        margin-top: 166px;
+        display: flex;
+        gap: 125px;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            width: 442px;
+
+            &__title {
+                font-family: $second-family;
+
+                text-align: center;
+                font-size: 54px;
+                color: $black;
+
+                span {
+                    color: $dark-orange;
+                }
+            }
+
+            &__desc {
+                margin-top: 21px;
+                font-size: 16px;
+                text-align: center;
+                color: #656363;
+                font-family: $font-family;
+            }
+
+            &__count {
+                display: flex;
+                margin-top: 83px;
+                justify-content: center;
+                gap: 41px;
+                font-family: $font-family;
+
+
+                &__block {
+                    flex-direction: column;
+
+                    &__num {
+                        font-size: 40px;
+                        text-align: center;
+                        color: #bc9060;
+                    }
+
+                    &__name {
+                        font-size: 20px;
+                        text-align: center;
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        &__imgs {
+            position: relative;
+            height: auto;
+            flex: 1;
+
+            &__img-1 {
+                position: absolute;
+                z-index: 100;
+                top: 182px;
+                left: 287px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            }
+
+            &__img-2 {
+    position: absolute;
+    z-index: 10;
+    top: -15px;
+    left: 191px;
+            }
+
+            &__img-3 {
+                position: absolute;
+                z-index: 100;
+                top: 16px;
+                left: -10px;
+            }
+
+            &__img-4 {
+                position: absolute;
+                z-index: 1;
+                top: 17px;
+                left: 287px;
+            }
+
+
+        }
+    }
+
+}
