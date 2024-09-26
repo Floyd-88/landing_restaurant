@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/**
+ * Сброс стилей
+ **/
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1110px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1128px) {
+  .wrap {
+    padding: 0 14px;
+  }
+}
+.header {
+  height: 800px;
+  background: url(../../assets/img/hero_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 23px;
+  margin-right: 38px;
+}
+.header__item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+.header__item:hover {
+  color: #ff7400;
+}
+.header__basket {
+  margin-right: 55px;
+  position: relative;
+}
+.header__basket img {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+.header__basket img:hover {
+  transform: scale(1.3);
+}
+.header__basket::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 51px;
+  background-color: #fff;
+  position: absolute;
+  top: -22px;
+  left: 33px;
+}
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-right: 44px;
+  padding-top: 4px;
+}
+.header__phone__number {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.header__phone__number img {
+  width: 23px;
+  height: 23px;
+}
+.header__phone__number a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+.header__phone__number a:hover {
+  color: #ff7400;
+}
+.header__phone__text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.header__btn {
+  border: 1px solid transparent;
+  background: #ff7400;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.header__btn:hover {
+  background: #a94e04;
+}
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    background: url(../../assets/img/hero_image_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__logo img {
+    width: 45px;
+    height: 31px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
