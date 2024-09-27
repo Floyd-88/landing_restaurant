@@ -697,5 +697,101 @@ img {
     gap: 87px;
   }
 }
+.section-4 {
+  margin-top: 150px;
+  background: url("../../assets/img/section-4/bg_menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recommended-menu__title {
+  padding-top: 100px;
+  padding-bottom: 138px;
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.recommended-menu__cards {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 226px;
+  justify-content: center;
+}
+.recommended-menu__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 63px 29px;
+  background-color: #fff;
+  position: relative;
+}
+.recommended-menu__card__recom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 11px 11px 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+  background-color: #d67e34;
+}
+.recommended-menu__card__img {
+  position: relative;
+}
+.recommended-menu__card__img img {
+  border-radius: 50%;
+}
+.recommended-menu__card__img__wrap__price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.recommended-menu__card__img__wrap__price span {
+  position: absolute;
+  font-family: "Cookie", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  right: 26px;
+  bottom: 29px;
+}
+.recommended-menu__card__title {
+  padding-top: 22px;
+  text-align: center;
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #000;
+}
+.recommended-menu__card__subtitle {
+  padding-top: 17px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+.recommended-menu__card__btn {
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
+  background: #d67e34;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 68px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.recommended-menu__card__btn:hover {
+  background: #a94e04;
+}
 
 /*# sourceMappingURL=style.css.map */

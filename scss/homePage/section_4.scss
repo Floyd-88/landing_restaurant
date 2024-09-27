@@ -1,0 +1,105 @@
+.section-4 {
+    margin-top: 150px;
+    background: url("../../assets/img/section-4/bg_menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recommended-menu {
+    &__title {
+        padding-top: 100px;
+        padding-bottom: 138px;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 54px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__cards {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 226px;
+        justify-content: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 63px 29px;
+        background-color: $white;
+        position: relative;
+
+        &__recom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 7px 11px 11px 11px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            color: #000;
+            background-color: #d67e34;
+        }
+
+        &__img {
+            position: relative;
+
+            img {
+                border-radius: 50%;
+
+            }
+
+            &__wrap__price {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+                span {
+                    position: absolute;
+                    font-family: $third-family;
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: #fff;
+                    right: 26px;
+                    bottom: 29px;
+                }
+
+            }
+        }
+
+        &__title {
+            padding-top: 22px;
+            text-align: center;
+            font-family: $second-family;
+            font-weight: 400;
+            font-size: 26px;
+            color: $black;
+        }
+
+        &__subtitle {
+            padding-top: 17px;
+
+            text-align: center;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: $black;
+        }
+
+        &__btn {
+            margin-top: 20px;
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+            @include btn(transparent, $dark-orange, 0, $white, 16px, 700, 14px, 68px);
+            transition: background-color .2s linear;
+
+            &:hover {
+                background: $hover-orange;
+            }
+        }
+    }
+}
