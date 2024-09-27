@@ -19,7 +19,8 @@
 
     &__cards {
         display: flex;
-        gap: 30px;
+        flex-wrap: wrap;
+        gap: 28px;
         padding-bottom: 226px;
         justify-content: center;
     }
@@ -101,5 +102,18 @@
                 background: $hover-orange;
             }
         }
+    }
+}
+
+@media (max-width: 540px) {
+    .recommended-menu__title {
+        padding-top: 62px;
+        padding-bottom: 98px;
+    }
+    .recommended-menu__cards {
+        padding-bottom: 106px;
+    }
+    .recommended-menu__card {
+        padding: 80px 26px 39px;
     }
 }
