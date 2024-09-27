@@ -1,0 +1,13 @@
+.footer {
+    background: url("../../assets/img/footer/footer_bg.png");
+    height: 772px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 540px) {
+.footer {
+    display: none;
+}
+}

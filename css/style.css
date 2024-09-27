@@ -864,5 +864,147 @@ img {
     background-color: #E5E5E5;
   }
 }
+.section-6 {
+  margin-top: 101px;
+  position: relative;
+}
+.section-6::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 119px;
+  width: 25px;
+  height: 100px;
+  background-color: #FF0000;
+}
+.section-6::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 119px;
+  width: 25px;
+  height: 100px;
+  background-color: #FF0000;
+}
+
+.gallery__title-wrap {
+  font-family: "Tinos", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  color: #000;
+  text-align: center;
+}
+.gallery__title-wrap span {
+  color: #d67e34;
+}
+.gallery__images__up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.gallery__images__up .images__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.gallery__images__up .images__left__up {
+  display: block;
+  width: 100%;
+}
+.gallery__images__up .images__left__up img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__images__up .images__left__down {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.gallery__images__up .images__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.gallery__images__up .images__right__up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.gallery__images__up .images__right__down {
+  display: block;
+}
+.gallery__images__up .images__right__down img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__images__down {
+  display: flex;
+  gap: 30px;
+  margin-top: 107px;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 540px) {
+  .section-6 {
+    margin-top: 71px;
+  }
+  .section-6 .gallery__title-wrap {
+    font-size: 40px;
+  }
+  .section-6::before {
+    display: none;
+  }
+  .section-6::after {
+    display: none;
+  }
+  .gallery__images__up .images__left__up {
+    overflow: hidden;
+    height: 274px;
+    width: 290px;
+    margin: 0 auto;
+  }
+  .gallery__images__up .images__right__down {
+    overflow: hidden;
+    height: 274px;
+    width: 290px;
+    margin: 0 auto;
+  }
+  .gallery__images__up {
+    margin-top: 71px;
+  }
+  .images__left__down img {
+    width: 290px;
+  }
+  .images__right__up img {
+    width: 290px;
+  }
+  .gallery__images__down {
+    margin-top: 80px;
+  }
+}
+.footer {
+  background: url("../../assets/img/footer/footer_bg.png");
+  height: 772px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 540px) {
+  .footer {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
