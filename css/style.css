@@ -890,6 +890,43 @@ img {
   color: black;
 }
 
+.swiper-container-review {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Стили для пагинации */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px; /* Задаём отступы сверху для точек */
+  text-align: center; /* Центрируем точки */
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: #c4c4c4; /* Цвет точки */
+  opacity: 1;
+  margin: 0 9px; /* Отступ между точками */
+  border-radius: 50%; /* Закругляем точки */
+  display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent !important;
+  border: 1px solid #ff7400; /* Цвет активной точки */
+}
+
 @media (max-width: 1110px) {
   .section-5 {
     padding-top: 10px;
