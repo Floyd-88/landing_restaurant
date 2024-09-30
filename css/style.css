@@ -90,7 +90,7 @@ img {
 }
 .header {
   height: 800px;
-  background: url(../../assets/img/hero_image.png);
+  background: url("/assets/img/hero_image.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -360,7 +360,7 @@ img {
 }
 @media (max-width: 540px) {
   .header {
-    background: url(../../assets/img/hero_image_mobile.png);
+    background: url("/assets/img/hero_image_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
