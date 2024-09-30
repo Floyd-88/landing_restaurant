@@ -48,7 +48,36 @@
             <button class="header__btn">ЗАКАЗ СТОЛИКА</button>
           </nav>
 
-          <div class="header__burger">
+          <nav class="header__nav__mobile" id="mobileNav">
+            <div class="close_nav_menu" id="closeNav">&times;</div>
+            <ul class="header__list__mobile">
+              <li class="header__item">ГЛАВНАЯ</li>
+              <li class="header__item">МЕНЮ</li>
+              <li class="header__item">О НАС</li>
+              <li class="header__item">БРОНЬ</li>
+            </ul>
+
+            <div class="header__basket">
+              <img src="./assets/icons/cart.svg" alt="basket" />
+            </div>
+
+            <div class="header__phone">
+              <div class="header__phone__number">
+                <img src="./assets/icons/phone.svg" alt="phone" />
+                <a href="tel:+9998887654" type="tel">+999-888-76-54</a>
+              </div>
+              <div class="header__phone__text">
+                <p>
+                  Свяжитесь с нами для <br />
+                  бронирования
+                </p>
+              </div>
+            </div>
+
+            <button class="header__btn">ЗАКАЗ СТОЛИКА</button>
+          </nav>
+
+          <div class="header__burger" id="openNav">
             <img src="./assets/icons/burger.svg" alt="navigate" />
           </div>
         </div>
@@ -511,6 +540,7 @@
     <footer class="footer"></footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
     <script src="./slider1_home.js"></script>
     <script src="./slider2_home.js"></script>
   </body>

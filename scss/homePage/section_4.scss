@@ -105,6 +105,14 @@
     }
 }
 
+.recommended-menu__cards-slider {
+    display: none;
+}
+
+.swiper-container {
+    display: none; // Отключаем слайдер на больших экранах
+}
+
 @media (max-width: 760px) {
     .recommended-menu__title {
         padding-top: 62px;
@@ -151,11 +159,11 @@
 }
 
 @media (min-width: 761px) {
-    .recommended-menu__cards-slider {
-        display: none;
-    }
+    // .recommended-menu__cards-slider {
+    //     display: none;
+    // }
 
-    .swiper-container {
-        display: none; // Отключаем слайдер на больших экранах
-    }
+    // .swiper-container {
+    //     display: none; // Отключаем слайдер на больших экранах
+    // }
 }
