@@ -15,6 +15,10 @@
         // margin-right: 50px;
     }
 
+    &__nav__mobile {
+        display: none;
+    }
+
     &__nav {
         display: flex;
         align-items: center;
@@ -235,6 +239,7 @@
     }
 
     .header__nav__mobile {
+    display: block;
         text-align: center;
         position: fixed;
         top: 0;
