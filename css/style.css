@@ -90,7 +90,7 @@ img {
 }
 .header {
   height: 800px;
-  background: url("/landing_restaurant/assets/img/hero_image.png");
+  background: url("/landing_restaurant/assets/img/hero_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -360,7 +360,7 @@ img {
 }
 @media (max-width: 540px) {
   .header {
-    background: url("/landing_restaurant/assets/img/hero_image_mobile.png");
+    background: url("/landing_restaurant/assets/img/hero_image_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -582,7 +582,7 @@ img {
   }
 }
 .section-2 {
-  background: url("../../assets/img/section-2/bg.png");
+  background: url("/landing_restaurant/assets/img/section-2/bg.jpg");
 }
 .section-2__block {
   display: flex;
@@ -767,7 +767,7 @@ img {
 }
 .section-4 {
   margin-top: 150px;
-  background: url("../../assets/img/section-4/bg_menu.png");
+  background: url("/landing_restaurant/assets/img/section-4/bg_menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1131,7 +1131,7 @@ img {
   }
 }
 .footer {
-  background: url("../../assets/img/footer/footer_bg.png");
+  background: url("/landing_restaurant/assets/img/footer/footer_bg.jpg");
   height: 772px;
   width: 100%;
   background-size: cover;
